@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UKM CGPA Calculator</title>
-    <link rel="icon" type="image/x-icon" href="UKM.ico">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='pictures/UKMico.ico') }}">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         body {
@@ -64,7 +64,7 @@
 </head>
 <body>
     <header>
-        <img src="UKM.png" alt="UKM Logo">
+        <img src="{{ url_for('static', filename='pictures/UKM.png') }}" alt="UKM Logo">
     </header>
     <h2>UKM CGPA Calculator</h2>
     <form id="cgpaForm">
